@@ -1,0 +1,36 @@
+.navbar {
+    background-color: white; /* Background color */
+    overflow: hidden; /* Clear floats */
+    margin-top: 35px;
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin-left: 110px; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    flex: 1; /* Make each item take equal space */
+    width: 180px;
+    height: 40px;
+}
+
+.navbar ul li a {
+    display: block; /* Make the link fill the entire list item */
+ 
+    text-decoration: none; /* Remove underline */
+    color: #212529; /* Text color */
+    text-align: center; /* Center the text */
+}
+
+.navbar ul li:hover {
+    background-color: #575757;
+    color: white; /* Change background on hover */
+}
+.navbar ul li a:hover{
+    color: white;
+}
