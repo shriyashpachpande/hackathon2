@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sub-div-navbar{
+    
+    width: 900px;
+    height: 75px;
+    margin-left: 20%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    justify-content: space-around;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    color: white;
+    
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #00B98E;
+}
+.box1,.box2,.box4,.box5{
+    transition: 0.4s ;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    height: 40px;
+    cursor: pointer;
+}
+.box3{
+    transition: 0.3s;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.box1:hover{
+    background-color: #edeceb;
+    color: #00B98E;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.box2:hover{    
+    background-color: #edeceb;
+    color: #00B98E;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.box3:hover{
+    background-color: #edeceb;
+    color: #00B98E;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.box4:hover{
+    background-color: #edeceb;
+    color: #00B98E;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.box5:hover{
+    background-color: #edeceb;
+    color: #00B98E;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-left: 37%;
+    margin-top: 100px;
+    transition: 0.4s;
+  }
+  .wrapper:hover{
+    border: 2px solid #ffffff;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box input:hover{
+    border: 2px solid white;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+ 
+  .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  .remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+  
+  }
+  .remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: 0.4s;
+  }
+  .btn:hover{
+    color: #00B98E;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+ 
+  /*<?php
+$servername = "localhost";
+$username = "root"; // Change as needed
+$password = ""; // Change as needed
+$dbname = "college_registration";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $student_id = $_POST['student_id'];
+    $mobile = $_POST['mobile'];
+    $email = $_POST['email'];
+    $course = $_POST['course'];
+    $year = $_POST['year'];
+    $branch = $_POST['branch'];
+    $dob = $_POST['dob'];
+    $address = $_POST['address'];
+
+    // Validate email domain
+    if (!preg_match("/@mgmcen\.ac\.in$|@sggscoe\.ac\.in$/", $email)) {
+        echo "Invalid email domain. Please use @mgmcen.ac.in or @sggscoe.ac.in.";
+        exit;
+    }
+
+    // Check if account already exists
+    $checkAccount = $conn->prepare("SELECT * FROM students WHERE mobile = ? OR email = ?");
+    $checkAccount->bind_param("ss", $mobile, $email);
+    $checkAccount->execute();
+    $result = $checkAccount->get_result();
+
+    if ($result->num_rows > 0) {
+        echo " <script> alert(' Mobile number or email already exists.');</script> ";
+        exit;
+    }
+
+    // Insert new record
+   // Insert new record
+$stmt = $conn->prepare("INSERT INTO students (name, student_id, mobile, email, course, year, branch, dob, address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("ssissssss", $name, $student_id, $mobile, $email, $course, $year, $branch, $dob, $address);
+
+if ($stmt->execute()) {
+    echo "Registration successful!";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+    $stmt->close();
+    $checkAccount->close();
+}
+
+$conn->close();
+?>
+<script>
+xhr.onload = function() {
+    if (xhr.status === 2) {
+        var response = JSON.parse(xhr.responseText);
+        if (response.exists) {
+            alert('Mobile number or email already exists.');
+            setTimeout(function() {
+                window.location.href = 'registration.php'; // Redirect to registration.php after alert
+            }, 1000); // Delay of 1 second before redirecting
+        } else {
+            // Proceed with registration or other actions
+            document.getElementById('message').innerText = 'Registration successful!';
+        }
+    }
+};</script>
+
+
+
+
